@@ -1,33 +1,43 @@
 <?php require('actions/users/signupAction.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+    <link href="login.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/295/295128.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
 <?php include 'includes/head.php'; ?>
 <body>
-    <br><br>
-    <form class="container" method="POST">
+   
 
-        <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; } ?>
 
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Pseudo</label>
-            <input type="text" class="form-control" name="pseudo">
+
+   
+<form class="container" method="POST">
+<?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; } ?>
+        <div class="container-wrapper">
+
+            <h3 class="login-text"><i class="bi bi-person-circle ac-logo"></i>Inscription</h3>
+        
+           
+                <div class="item"><input class="input" type="text" placeholder="Pseudo" name="pseudo"></div> 
+                <div class="item"><input class="input" type="text" placeholder="Nom" name="lastname"></div> 
+                <div class="item"><input class="input" type="text" placeholder="Prénom" name="firstname"></div> 
+                <div class="item"><input class="input" type="password" placeholder="Mot de passe" name="password"> </div>
+                
+
+                <div class="item submit"><button type="submit" name="validate">S'inscrire</button></div>
+            
+<br>
+          
+            <span class="ac">J'ai déjà un compte?<a href="signup.php"> Se connecter</a></span>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nom</label>
-            <input type="text" class="form-control" name="lastname">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Prénom</label>
-            <input type="text" class="form-control" name="firstname">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" name="password">
-        </div>
-        <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
-        <br><br>
-        <a href="login.php"><p>J'ai déjà un compte, je me connecte</p></a>
-   </form>
+
+</form>
+
+
+
+
 
 </body>
 </html>

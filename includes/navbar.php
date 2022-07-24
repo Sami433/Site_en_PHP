@@ -15,7 +15,8 @@
         <li class="nav-item">
           <a class="nav-link" href="my-questions.php">Mes questions</a>
         </li>
-        <?php 
+        
+       <?php 
           if(isset($_SESSION['auth'])){
             ?>
             <li class="nav-item">
@@ -30,4 +31,5 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> 
+

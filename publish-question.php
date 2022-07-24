@@ -4,35 +4,43 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+<link href="question.css" rel="stylesheet">
+
+</head>
+
+
+
+
 <?php include 'includes/head.php'; ?>
 <body>
     <?php include 'includes/navbar.php'; ?>
 
-    <br><br>
-    <form class="container" method="POST">
 
-        <?php 
-            if(isset($errorMsg)){ 
-                echo '<p>'.$errorMsg.'</p>'; 
-            }elseif(isset($successMsg)){ 
-                echo '<p>'.$successMsg.'</p>'; 
-            }
-        ?>
+    <div id="wrapper">
 
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Titre de la question</label>
-            <input type="text" class="form-control" name="title">
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Description de la question</label>
-            <textarea class="form-control" name="description"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Contenu de la question</label>
-            <textarea type="text" class="form-control" name="content"></textarea>
-        </div>
+<form id="paper" method="POST" action="">
+<?php 
+    if(isset($errorMsg)){ 
+        echo '<p>'.$errorMsg.'</p>'; 
+    }elseif(isset($successMsg)){ 
+        echo '<p>'.$successMsg.'</p>'; 
+    }
+?>
 
-        <button type="submit" class="btn btn-primary" name="validate">Publier la question</button>
-   </form>
+    <div id="margin">Title: <input id="title" type="text" name="title"></div>
+    <div id="margin">Title: <input id="title" type="text" name="description"></div>
+    <br>
+    <textarea placeholder="Enter something funny." id="text" name="content" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>  
+    
+    <input id="button" type="submit" value="Create" name="validate">
+    
+</form>
+
+</div>
+<script src="question.js"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,111 @@
+<?php 
+    session_start();
+    require('actions/questions/showAllQuestionsAction.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<?php include 'includes/head.php'; ?>
+<body>
+    <?php include 'includes/navbar.php'; ?>
+    <br><br>
+
+    <div class="container">
+    
+        <form method="GET">
+
+            <div class="form-group row">
+
+                <div class="col-8">
+                    <input type="search" name="search" class="form-control">
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-success" type="submit">Rechercher</button>
+                </div>
+
+            </div>
+        </form>
+
+        <br>
+
+        <?php 
+            while($question = $getAllQuestions->fetch()){
+                ?>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="article.php?id=<?= $question['id']; ?>">
+                            <?= $question['titre']; ?>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <?= $question['description']; ?>
+                    </div>
+                    <div class="card-footer">
+                        Publié par <a href="profile.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> le <?= $question['date_publication']; ?>
+                    </div>
+                </div>
+                <br>
+                <?php
+            }
+        ?>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+    <br><br>
+    <form class="container" method="POST">
+
+        <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; } ?>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Pseudo</label>
+            <input type="text" class="form-control" name="pseudo">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
+        <br><br>
+        <a href="signup.php"><p>Je n'ai pas de compte, je m'inscris</p></a>
+    </form>
+
+
+
+
+
+    
+    <br><br>
+    <form class="container" method="POST">
+
+        <?php 
+            if(isset($errorMsg)){ 
+                echo '<p>'.$errorMsg.'</p>'; 
+            }elseif(isset($successMsg)){ 
+                echo '<p>'.$successMsg.'</p>'; 
+            }
+        ?>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Titre de la question</label>
+            <input type="text" class="form-control" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Description de la question</label>
+            <textarea class="form-control" name="description"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Contenu de la question</label>
+            <textarea type="text" class="form-control" name="content"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" name="validate">Publier la question</button>
+   </form>
+

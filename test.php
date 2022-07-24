@@ -9,6 +9,7 @@
     <link href="index.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+
 </head>
 <?php include 'includes/head.php'; ?>
 <body>
@@ -30,25 +31,19 @@
 
         
 
-        <br>
-<br>
-
         <?php 
             while($question = $getAllQuestions->fetch()){
                 ?>
-                <div class="card">
-                    <div class="card-header">
+                <div class="containerB">
+                    
                         <a href="article.php?id=<?= $question['id']; ?>">
                             <?= $question['titre']; ?>
+                          
+                            <br>
+                            Publié par <a href="profile.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> <br>le <?= $question['date_publication']; ?>
                         </a>
                     </div>
-                    <div class="card-body">
-                        <?= $question['description']; ?>
-                    </div>
-                    <div class="card-footer">
-                        Publié par <a href="profile.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> le <?= $question['date_publication']; ?>
-                    </div>
-                </div>
+                  
                 <br>
                 <?php
             }
@@ -56,6 +51,13 @@
         
 
     </div>
+
+
+    
+
+
+
+
 
 </body>
 </html>
