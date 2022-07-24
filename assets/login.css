@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 
 body{ 
 
-background-color: #FD5D5D;
+background-color: #778899;
 
 }
 
@@ -22,7 +23,7 @@ background-color: #FD5D5D;
     margin: 2em;
     width: max-content;
     height: max-content;
-    background-color: #FF8080;
+    background-color: #d1d1d1;
     border-radius: 30px;
 }
 
@@ -51,12 +52,12 @@ button {
     border-radius: 4.7em;
     border: none;
     width: 100%;
-    background-color: #FD5D5D;
+    background-color:#919090 ;
     font-size: 18px;
 }
 
 .submit button:hover {
-    background-color: #ff3449;
+    background-color: #787474;
     cursor: pointer;
     box-shadow: #b5b6fb;
 
@@ -92,13 +93,13 @@ form {
 
 
 * {
-    font-family: 'Varela Round', sans-serif;
-    color: #3a2d2d;
+    font-family: 'Luckiest Guy', cursive;
+    
 }
 
 .ac a {
     text-decoration: underline;
-    color: #3a2d2d;
+    
 }
 
 .ac-logo {

@@ -5,13 +5,14 @@
 
 <head>
 
-<link href="login.css" rel="stylesheet">
-<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/295/295128.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./assets/login.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 </head>
 <body>
-    
+<?php include 'includes/navbar.php'; ?>
 
 
 
@@ -23,13 +24,13 @@
         
            
                 <div class="item"><input class="input" type="text" placeholder="Pseudo" name="pseudo"></div> 
-                <div class="item"><input class="input" type="password" placeholder="Password" name="password"> </div>
+                <div class="item"><input class="input" type="password" placeholder="Mot de passe" name="password"> </div>
                 
 
-                <div class="item submit"><button type="submit" name="validate">Submit</button></div>
+                <div class="item submit"><button type="submit" name="validate">Se connecter</button></div>
             
 <br>
-            <h2><span>OR</span></h2>
+          
          
             <div class="social-media">
 

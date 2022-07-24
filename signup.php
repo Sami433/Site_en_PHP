@@ -2,14 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <link href="login.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/login.css">
 <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/295/295128.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <?php include 'includes/head.php'; ?>
 <body>
    
-
+<?php include 'includes/navbar.php'; ?>
 
 
    
@@ -30,7 +31,7 @@
             
 <br>
           
-            <span class="ac">J'ai déjà un compte?<a href="signup.php"> Se connecter</a></span>
+            <span class="ac">J'ai déjà un compte?<a href="login.php"> Se connecter</a></span>
         </div>
 
 </form>

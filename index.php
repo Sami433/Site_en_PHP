@@ -4,19 +4,31 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-
-    <link href="index.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-</head>
 <?php include 'includes/head.php'; ?>
+<link rel="stylesheet" type="text/css" href="./assets/index.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+<style>
+
+.card{
+
+    border: 0.2rem solid;
+  border-radius: 30px;
+ 
+}
+
+
+
+</style>
+
 <body>
     <?php include 'includes/navbar.php'; ?>
     <br><br>
 
-
-   <form method="GET">
+    <div class="container">
+    
+    
+    <form method="GET">
 <div class="box">
   <div class="container-2">
       <span class="icon"><i class="fa fa-search"></i></span>
@@ -25,13 +37,9 @@
 </div>
 
  
-    
-     
-
-        
+</form>
 
         <br>
-<br>
 
         <?php 
             while($question = $getAllQuestions->fetch()){
@@ -53,7 +61,6 @@
                 <?php
             }
         ?>
-        
 
     </div>
 
