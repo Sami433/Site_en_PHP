@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'includes/head.php'; ?>
+<link rel="stylesheet" type="text/css" href="./assets/style.css">
 <body>
     
     <?php include 'includes/navbar.php'; ?>
