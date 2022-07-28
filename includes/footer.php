@@ -52,7 +52,7 @@
 					<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
                     
      
-                        <h5 class="mb-4 font-weight-bold">Resaux sociaux</h5>
+                        <h5 class="mb-4 font-weight-bold">&thinsp;&thinsp;&thinsp;&thinsp;Resaux sociaux</h5>
 						<ul class="social-pet mt-4">
 							<li><a href="https://fr-fr.facebook.com/" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="https://twitter.com/?lang=fr" title="twitter"><i class="fab fa-twitter"></i></a></li>
@@ -67,7 +67,7 @@
 						<form class="form-group" method="POST">
 						<div class="input-group">
 						  	<input type="email" class="form-control" name="mail" placeholder="Entrez votre Email">
-                              <button class="btn btn-primary" type="submit" name="validate">Répondre</button>
+                              <button class="btn btn-primary" type="submit" name="validate">Envoyer</button>
 						</div>
         </form>
         </div>

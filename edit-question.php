@@ -2,11 +2,13 @@
     require('actions/users/securityAction.php');
     require('actions/questions/getInfosOfEditedQuestionAction.php');
     require('actions/questions/editQuestionAction.php');
+    require('actions/users/sendmail.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'includes/head.php'; ?>
 <link rel="stylesheet" type="text/css" href="./assets/style.css">
+<link rel="stylesheet" type="text/css" href="./assets/footer.css">
 <body>
     <?php include 'includes/navbar.php'; ?>
 
@@ -40,6 +42,6 @@
 
     </div>
     
-
+    <?php include 'includes/footer.php'; ?>
 </body>
 </html>
