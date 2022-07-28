@@ -1,11 +1,13 @@
 <?php 
     session_start();
     require('actions/questions/showAllQuestionsAction.php');
+    require('actions/users/sendmail.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'includes/head.php'; ?>
 <link rel="stylesheet" type="text/css" href="./assets/index.css">
+<link rel="stylesheet" type="text/css" href="./assets/footer.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
 <style>
@@ -63,6 +65,8 @@
         ?>
 
     </div>
+
+    <?php include 'includes/footer.php'; ?>
 
 </body>
 </html>

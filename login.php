@@ -33,13 +33,13 @@
 <br>
           
          
-            <div class="social-media">
+          <!--   <div class="social-media">
 
                 <a href="#"><div class="icons8-google social-mediaImg"></div></a> 
                 <a href="#"><div class="icons8-facebook-circled social-mediaImg"></div></a> 
                 <a href="#"><div class="icons8-twitter social-mediaImg"></div></a> 
   
-            </div>
+            </div> -->
             <span class="ac">Vous n'avez pas de compte?<a href="signup.php"> S'inscrire</a></span>
         </div>
 
