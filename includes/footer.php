@@ -11,7 +11,7 @@
 								<div class="row">
 									<div class="col-1"><i class="fas fa-map-marker"></i></div>
 									<div class="col-10">
-										<h6 class="font-weight-bold mb-0">Address:</h6>
+										<h6 class="font-weight-bold mb-0">Addresse:</h6>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 									</div>
 								</div>
@@ -29,7 +29,7 @@
 								<div class="row">
 									<div class="col-1"><i class="fas fa-phone-volume"></i></div>
 									<div class="col-10">
-										<h6 class="font-weight-bold mb-0">Address:</h6>
+										<h6 class="font-weight-bold mb-0">Téléphone:</h6>
 										<p><a href="#">+XX (0) XX XX-XXXX-XXXX</a></p>
 									</div>
 								</div>
